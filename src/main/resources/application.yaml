@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: first_ci_cd
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    hikari:
+      username: root
+      password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    csrf:
+      enabled: true
+    path: /swagger-ui/index.html
