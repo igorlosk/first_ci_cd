@@ -35,7 +35,7 @@ class PhoneControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(jsonRequest)
         ).andExpect(status().isOk())
-                .andExpect(jsonPath("$.brandName").value("Samsung"))
+                .andExpect(jsonPath("$.brandName").value("Samsung1"))
                 .andExpect(jsonPath("$.memory").value(257))
                 .andExpect(jsonPath("$.price").value(35000))
                 .andReturn();
